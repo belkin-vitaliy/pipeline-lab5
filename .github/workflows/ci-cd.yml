@@ -42,7 +42,7 @@ jobs:
       run: echo $SSH_KEY
     
     - name: Run JOB_NAME
-      run: echo {{ vars.JOB_NAME }}
+      run: echo ${{ vars.JOB_NAME }}
 
   deploy:
     name: Deploy Application
