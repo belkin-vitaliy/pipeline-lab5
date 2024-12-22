@@ -47,6 +47,11 @@ jobs:
     needs: test
 
     steps:
+    - name: Run SSH_HOST1
+      env:
+        SSH_HOST1: ${{ vars.SSH_HOST }}
+      run: echo $SSH_HOST1
+      
     - name: Checkout code
       uses: actions/checkout@v3
 
