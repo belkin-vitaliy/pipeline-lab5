@@ -30,20 +30,7 @@ jobs:
 
     - name: Run tests
       run: pytest test_app.py --maxfail=5 --disable-warnings
-
-    - name: Run SSH_HOST
-      env:
-        SSH_HOST: ${{ vars.SSH_HOST }}
-      run: echo $SSH_HOST
-
-    - name: Run SSH_KEY
-      env:
-        SSH_KEY: ${{ secrets.SSH_KEY }}
-      run: echo $SSH_KEY
     
-    - name: Run JOB_NAME
-      run: echo ${{ vars.JOB_NAME }}
-
     - name: Run connect
       run: pwd
 
@@ -119,6 +106,5 @@ jobs:
 
         script: |
           cd /home/vitaly/deploy
-          sudo git pull origin main
-          sudo pip install -r requirements.txt
-          python app.py
+          git pull origin main
+          
