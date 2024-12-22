@@ -44,6 +44,9 @@ jobs:
     - name: Run JOB_NAME
       run: echo ${{ vars.JOB_NAME }}
 
+    - name: Run connect
+      run: ls -al /path/to/private/
+
   deploy:
     name: Deploy Application
     runs-on: ubuntu-latest
