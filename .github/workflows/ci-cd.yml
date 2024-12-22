@@ -47,7 +47,7 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.REMOTE_HOST }}
-        username: ${{ secrets.REMOTE_SSH_USER }}
+        username: ${{ vars.REMOTE_SSH_USER }}
         key: |
           -----BEGIN OPENSSH PRIVATE KEY-----
           b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
@@ -100,7 +100,7 @@ jobs:
           -----END OPENSSH PRIVATE KEY-----
         script: |
           echo "Connected to ${{ secrets.REMOTE_HOST }}"
-          echo "User ${{ secrets.REMOTE_SSH_USER }}"
+          echo "User ${{ vars.REMOTE_SSH_USER }}"
           echo "Key ${{ secrets.REMOTE_SSH_KEY }}"
           cd /home/vitaly/deploy
           git clone https://github.com/belkin-vitaliy/pipeline-lab5.git
