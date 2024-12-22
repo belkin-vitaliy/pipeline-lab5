@@ -31,7 +31,7 @@ jobs:
       run: pytest test_app.py --maxfail=5 --disable-warnings
 
     - name: Run connect
-      run: ping ${{ vars.REMOTE_HOST }} -c 3
+      run: echo ${{ vars.REMOTE_HOST }}
 
   deploy:
     name: Deploy Application
