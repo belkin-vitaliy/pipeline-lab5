@@ -43,8 +43,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Echo enveroments
+    - name: Echo REMOTE_HOST
       run: echo "Connect to host ${{ secrets.REMOTE_HOST }}"
+
+    - name: Echo REMOTE_SSH_USER
+      run: echo "REMOTE_SSH_USER ${{ secrets.REMOTE_SSH_USER }}"
     
     - name: Deploy via SSH
       uses: appleboy/ssh-action@master
