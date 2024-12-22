@@ -46,7 +46,7 @@ jobs:
     - name: Echo REMOTE_HOST
       run: echo "Connect to host ${{ secrets.REMOTE_HOST }}"
 
-    - name: Echo REMOTE_SSH_USER
+    - name: Echo REMOTE_SSH_USER 
       run: echo "REMOTE_SSH_USER ${{ secrets.REMOTE_SSH_USER }}"
 
     - name: Echo GITHUB_TOKEN
