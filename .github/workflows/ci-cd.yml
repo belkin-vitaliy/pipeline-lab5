@@ -47,6 +47,6 @@ jobs:
         key: ${{ secrets.REMOTE_SSH_KEY }}
         script: |
           cd /home/vitaly/deploy
-          git pull origin main
-          pip install -r requirements.txt
+          sudo git pull origin main
+          sudo pip install -r requirements.txt
           python app.py
