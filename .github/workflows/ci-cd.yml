@@ -14,6 +14,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+   
     - name: Checkout code
       uses: actions/checkout@v3
 
@@ -30,11 +31,15 @@ jobs:
     - name: Run tests
       run: pytest test_app.py --maxfail=5 --disable-warnings
 
-    - name: Run connect
-      run: echo ${{ vars.SSH_HOST }}
+    - name: Run SSH_HOST
+      env:
+        SSH_HOST: ${{ vars.SSH_HOST }}
+      run: echo $SSH_HOST
 
     - name: Run SSH_KEY
-      run: echo ${{ secrets.SSH_KEY }}
+      env:
+        SSH_KEY: ${{ secrets.SSH_KEY }}
+      run: echo $SSH_KEY
 
   deploy:
     name: Deploy Application
