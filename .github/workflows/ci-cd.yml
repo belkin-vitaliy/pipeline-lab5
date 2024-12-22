@@ -51,7 +51,7 @@ jobs:
     - name: Deploy via SSH
       uses: appleboy/ssh-action@v0.1.9
       with:
-        host: 194.59.40.195
+        host: ${{ secrets.REMOTE_HOST }}
         username: vitaly
         key: |
           -----BEGIN OPENSSH PRIVATE KEY-----
