@@ -46,7 +46,7 @@ jobs:
         username: ${{ secrets.REMOTE_USER }}
         key: ${{ secrets.REMOTE_SSH_KEY }}
         script: |
-          cd /path/to/deploy
+          cd /home/vitaly/deploy
           git pull origin main
           pip install -r requirements.txt
           python app.py
