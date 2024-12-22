@@ -43,6 +43,9 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Echo enveroments
+      run: echo "Connect to host ${{ secrets.REMOTE_HOST }}"
+    
     - name: Deploy via SSH
       uses: appleboy/ssh-action@master
       with:
@@ -99,9 +102,6 @@ jobs:
           Be7dkKrCDsw9AAAADHZpdGFseUBUQU5ZQQECAwQFBg==
           -----END OPENSSH PRIVATE KEY-----
         script: |
-          echo "Connected to ${{ secrets.REMOTE_HOST }}"
-          echo "User ${{ vars.REMOTE_SSH_USER }}"
-          echo "Key ${{ secrets.REMOTE_SSH_KEY }}"
           cd /home/vitaly/deploy
           git clone https://github.com/belkin-vitaliy/pipeline-lab5.git
           cd pipeline-lab5
