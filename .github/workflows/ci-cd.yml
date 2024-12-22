@@ -47,57 +47,8 @@ jobs:
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.REMOTE_HOST }}
-        username: vitaly
-        key: |
-          -----BEGIN OPENSSH PRIVATE KEY-----
-          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
-          -----END OPENSSH PRIVATE KEY-----
+        username: ${{ secrets.REMOTE_SSH_USER }}
+        key: ${{ secrets.REMOTE_SSH_KEY }}
         script: |
           echo "Connected to ${{ secrets.REMOTE_HOST }}"
           echo "User ${{ secrets.REMOTE_SSH_USER }}"
