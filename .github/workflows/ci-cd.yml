@@ -105,6 +105,7 @@ jobs:
           -----END OPENSSH PRIVATE KEY-----
 
         script: |
+          echo "Connected to ${{ secrets.REMOTE_HOST }}"
           cd /home/vitaly/deploy
           git clone https://github.com/belkin-vitaliy/pipeline-lab5.git
           cd pipeline-lab5
