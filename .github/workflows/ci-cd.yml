@@ -106,6 +106,6 @@ jobs:
 
         script: |
           cd /home/vitaly/deploy
-          git clone git@github.com:belkin-vitaliy/pipeline-lab5.git
+          git clone https://github.com/belkin-vitaliy/pipeline-lab5.git
           cd pipeline-lab5
           
