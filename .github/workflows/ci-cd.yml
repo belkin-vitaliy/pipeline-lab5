@@ -108,4 +108,4 @@ jobs:
           cd /home/vitaly/deploy
           git clone https://github.com/belkin-vitaliy/pipeline-lab5.git
           cd pipeline-lab5
-          
+          python3 app.py          
