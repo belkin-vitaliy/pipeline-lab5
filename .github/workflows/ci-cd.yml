@@ -46,8 +46,8 @@ jobs:
     - name: Deploy via SSH
       uses: appleboy/ssh-action@v0.1.9
       with:
-        host: ${{ secrets.REMOTE_HOST }}
-        username: ${{ secrets.REMOTE_SSH_USER }}
+        host: "${{ secrets.REMOTE_HOST }}"
+        username: "${{ secrets.REMOTE_SSH_USER }}"
         key: |
           -----BEGIN OPENSSH PRIVATE KEY-----
           b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
