@@ -47,7 +47,7 @@ jobs:
       uses: appleboy/ssh-action@v0.1.9
       with:
         host: 194.59.40.195
-        username: ${{ secrets.REMOTE_SSH_USER }}
+        username: vitaly
         key: |
           -----BEGIN OPENSSH PRIVATE KEY-----
           b3BlbnNzaC1rZXktdjEAAAAABG5vbmUAAAAEbm9uZQAAAAAAAAABAAACFwAAAAdzc2gtcn
