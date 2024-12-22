@@ -56,8 +56,8 @@ jobs:
         key: ${{ secrets.REMOTE_SSH_KEY }}
         script: |
           echo "Connected to ${{ secrets.REMOTE_HOST }}"
-          echo "User: ${{ secrets.REMOTE_SSH_USER }}"
-          echo "Key: ${{ secrets.REMOTE_SSH_KEY }}"
+          echo "User ${{ secrets.REMOTE_SSH_USER }}"
+          echo "Key ${{ secrets.REMOTE_SSH_KEY }}"
           cd /home/vitaly/deploy
           git clone https://github.com/belkin-vitaliy/pipeline-lab5.git
           cd pipeline-lab5
