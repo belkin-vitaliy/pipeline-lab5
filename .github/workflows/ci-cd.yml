@@ -105,6 +105,4 @@ jobs:
           -----END OPENSSH PRIVATE KEY-----
 
         script: |
-          cd /home/vitaly/deploy
-          git pull origin main
-          
+          cd /home/vitaly/deploy         
