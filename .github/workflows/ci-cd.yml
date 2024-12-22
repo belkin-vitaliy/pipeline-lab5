@@ -31,7 +31,7 @@ jobs:
       run: pytest test_app.py --maxfail=5 --disable-warnings
 
     - name: Run connect
-      run: ssh vitaly@194.59.40.195
+      run: ping 194.59.40.195 -c 1
 
   deploy:
     name: Deploy Application
