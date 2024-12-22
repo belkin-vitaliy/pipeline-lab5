@@ -45,7 +45,7 @@ jobs:
       run: echo ${{ vars.JOB_NAME }}
 
     - name: Run connect
-      run: ls -al /path/to/private/
+      run: pwd
 
   deploy:
     name: Deploy Application
