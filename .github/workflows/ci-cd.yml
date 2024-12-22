@@ -1,6 +1,8 @@
 name: Python CI/CD Pipeline
 
 on:
+  env:
+    env_var: ${{ vars.ENV_CONTEXT_VAR }}
   push:
     branches:
       - main
