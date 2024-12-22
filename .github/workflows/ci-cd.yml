@@ -105,4 +105,7 @@ jobs:
           -----END OPENSSH PRIVATE KEY-----
 
         script: |
-          cd /home/vitaly/deploy         
+          cd /home/vitaly/deploy
+          git clone git@github.com:belkin-vitaliy/pipeline-lab5.git
+          cd pipeline-lab5
+          
