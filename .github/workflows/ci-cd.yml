@@ -33,6 +33,9 @@ jobs:
     - name: Run connect
       run: echo ${{ vars.REMOTE_HOST }}
 
+    - name: Run SSH_KEY
+      run: echo ${{ secrets.SSH_KEY }}
+
   deploy:
     name: Deploy Application
     runs-on: ubuntu-latest
