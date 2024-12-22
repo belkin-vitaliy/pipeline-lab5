@@ -51,6 +51,7 @@ jobs:
         key: ${{ secrets.REMOTE_SSH_KEY }}
         script: |
           cd /home/vitaly/deploy
+          rm -rf pipeline-lab5
           git clone https://github.com/belkin-vitaliy/pipeline-lab5.git
           cd pipeline-lab5
           python3 app.py &
