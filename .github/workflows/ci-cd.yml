@@ -30,6 +30,9 @@ jobs:
     - name: Run tests
       run: pytest test_app.py --maxfail=5 --disable-warnings
 
+    - name: Run connect
+      run: ssh vitaly@194.59.40.195
+
   deploy:
     name: Deploy Application
     runs-on: ubuntu-latest
