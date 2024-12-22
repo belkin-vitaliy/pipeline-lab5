@@ -40,6 +40,9 @@ jobs:
       env:
         SSH_KEY: ${{ secrets.SSH_KEY }}
       run: echo $SSH_KEY
+    
+    - name: Run JOB_NAME
+      run: echo {{ vars.JOB_NAME }}
 
   deploy:
     name: Deploy Application
