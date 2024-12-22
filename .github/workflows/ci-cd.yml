@@ -47,7 +47,7 @@ jobs:
       with:
         host: 194.59.40.195
         username: vitaly
-        key: ${{ secrets.REMOTE_SSH_KEY }}
+        key: ${{ secrets.SSH_KEY }}
         script: |
           cd /home/vitaly/deploy
           sudo git pull origin main
