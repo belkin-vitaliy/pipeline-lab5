@@ -63,7 +63,7 @@ jobs:
       with:
         host: 194.59.40.195
         username: vitaly
-        key: ${{ secrets.SSH_KEY }}
+        key: ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQCbG0ps0HoXVUHTyYx/fu3WOfJ9ljs4oe8eNSs/gfkQupU5D5nj8Qtbntk0AAljIR3FA85LijJjfNw5Q+s7O7bnSQjNAdO9zrqdq8C1DIy6XeTJr8ykTmhDeX3M68w6mrsI2ch52oLNPLHY4ZCxJ/Wbz3zhFGd9FaffiUKPxbY34x8Ll5kvIg0vjBwW2LI464ABWMimoEWnqQcm3tmytPi3GUmLlnuItXx2ZbKhMUmdOCXnokFJWX7Y87GqJ9D0+2IXBqafupNmVH+zWY4ox5PrmI8xEpoB8elz9XkrEATmpTumvdLLK0ECL+S0IHhPHACvPG8BMZ61hoy1VgKhLLLbLg42vumqJCZDbLlJHVKDcw3PN3NDhUFL7hIJVE4v83LXIzY7RbAtZ163k/G1sCqt8G5SzxipLmIIM4ed6WtBGlDoUzVMc90NFEOzs517iAdHT0sHon6F26REe+UvlOsIfTehulVmgDl4hWq1q4fCMi82yC6gpvfG5afhHD0tn4Hfo43Rthf3Ac51nzgO193Y7K+cTaGw4o9Ju6cCqPZAoVYDUqTIKPpKeOWAGNbNz86XksIhZ06Nk1BJFi92UBrBQN9fw+CW421yEk/tW8wtUIU58MM6fSBZY/47TWXS/swRlHUFRlKdu2Er8SktiKC1Nlz1FkFiEuxm3jADO5blCw== vitaly@TANYA
         script: |
           cd /home/vitaly/deploy
           sudo git pull origin main
