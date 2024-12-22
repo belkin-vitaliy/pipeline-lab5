@@ -42,8 +42,8 @@ jobs:
     - name: Deploy via SSH
       uses: appleboy/ssh-action@v0.1.9
       with:
-        host: ${{ secrets.REMOTE_HOST }}
-        username: ${{ secrets.REMOTE_USER }}
+        host: ${{ vars.REMOTE_HOST }}
+        username: ${{ vars.REMOTE_USER }}
         key: ${{ secrets.REMOTE_SSH_KEY }}
         script: |
           cd /home/vitaly/deploy
